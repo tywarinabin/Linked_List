@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+// PROGRAM TO COUNT NUMBERS OF NODE IN LINKED LIST.....
 struct node{
     int data;
     struct node *link;
@@ -9,6 +10,7 @@ void traverse(struct node *ptr){
    while(ptr!= NULL){
      printf("%d  ", ptr->data);
     ptr = ptr->link;
+   // PTR will changes to next link of node
    count++;
    }
    printf("No. of NODES = %d ", count);
